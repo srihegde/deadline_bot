@@ -1,2 +1,7 @@
+__pycache__/
+.DS_Store
 keys.json
 .env
+
+imgs/
+testbed.ipynb

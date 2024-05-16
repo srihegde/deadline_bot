@@ -8,3 +8,5 @@ conda create -n dlbot python=3.10
 conda activate dlbot
 pip install tweepy python-dotenv
 ```
+
+Check [](this blog post) for more info on setting up and using the scripts to run the bot.
