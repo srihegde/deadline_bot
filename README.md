@@ -1,10 +1,10 @@
 # Deadline Bot
 
-A quick and simple implementation of a twitter bot that is basically a countdown timer for CG,CV, and Vis conferences.
+A quick and simple implementation of a Twitter bot that is basically a countdown timer for CG,CV, and Vis conferences. The code also provides functionality to curate the deadlines using LLMs actively.
 
-Checkout the bot in action [here](https://x.com/confclock)!
+Check out the bot in action [here](https://x.com/confclock)!
 
-## How to setup environment for running the scripts
+## How to setup the environment for running the scripts
 ```
 conda create -n dlbot python=3.10
 conda activate dlbot
@@ -25,8 +25,8 @@ pip install langchain langchain-community langchain-google-genai
 |
 ├── dl.csv:                        CSV file containing the conference deadlines
 |
-└── setup_bot.ipynb:               Jupyter notebook to setup the bot
+└── setup_bot.ipynb:               Jupyter notebook to set up the bot
 
 ```
 
-Ideal way to run the bot is to use a cron job to sequentially run `conf_curator.py` followed by `app.py` script at a specific time of the day. 
+An ideal way to run the bot is to use a cron job to sequentially run the `conf_curator.py` followed by the `app.py` script at a specific time of the day. 
