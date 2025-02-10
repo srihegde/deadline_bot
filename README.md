@@ -9,4 +9,21 @@ conda activate dlbot
 pip install tweepy python-dotenv
 ```
 
-Check [this blog post](https://srihegde.github.io/post/dlbot/) for more info on setting up and using the scripts to run the bot.
+<!-- Check [this blog post](https://srihegde.github.io/post/dlbot/) for more info on setting up and using the scripts to run the bot. -->
+
+## File Structure
+
+```bash
+├── README.md:                     This file
+|
+├── app.py:                        Main script to run the bot
+|
+├── conf_curator.py:               Script for LLM-based deadline curation
+|
+├── dl.csv:                        CSV file containing the conference deadlines
+|
+└── setup_bot.ipynb:               Jupyter notebook to setup the bot
+
+```
+
+Ideal way to run the bot is to use a cron job to sequentially run `conf_curator.py` followed by `app.py` script at a specific time of the day. 
